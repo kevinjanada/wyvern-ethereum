@@ -1,3 +1,7 @@
+require("dotenv").config()
+
+const HDWalletProvider = require("@truffle/hdwallet-provider")
+
 module.exports = {
   networks: {
     development: {
@@ -34,6 +38,15 @@ module.exports = {
       network_id: 1,
       gas: 6700000,
       gasPrice: 6110000000
+    },
+    telkom: {
+      provider: () => new HDWalletProvider({
+        privateKeys: [process.env.PRIVATE_KEY],
+        providerOrUrl: 'https://rpc.telkombc.id/',
+      }),
+      network_id: 2021,
+      gas: 0,
+      gasPrice: 0x0
     }
   },
   solc: {
