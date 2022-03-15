@@ -47,6 +47,24 @@ module.exports = {
       network_id: 2021,
       gas: 0,
       gasPrice: 0x0
+    },
+    polygon_mumbai: {
+      provider: () => new HDWalletProvider({
+        privateKeys: [process.env.PRIVATE_KEY],
+        providerOrUrl: 'https://speedy-nodes-nyc.moralis.io/3006aa01728823dbd0ed3134/polygon/mumbai',
+      }),
+      network_id: 80001,
+      gas: 0,
+      gasPrice: 0x0
+    },
+    polygon_mainnet: {
+      provider: () => new HDWalletProvider({
+        privateKeys: [process.env.PRIVATE_KEY],
+        providerOrUrl: 'https://speedy-nodes-nyc.moralis.io/3006aa01728823dbd0ed3134/polygon/mainnet',
+      }),
+      network_id: 137,
+      gas: 0,
+      gasPrice: 0x0
     }
   },
   solc: {

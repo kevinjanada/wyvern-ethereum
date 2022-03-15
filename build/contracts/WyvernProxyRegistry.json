@@ -1404,13 +1404,43 @@
     "version": "0.4.23+commit.124ca40d.Emscripten.clang"
   },
   "networks": {
-    "2021": {
-      "events": {},
+    "80001": {
+      "events": {
+        "0xf8df31144d9c2f0f6b59d69b8b98abd5459d07f2742c4df920b25aae33c64820": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "previousOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipRenounced",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        }
+      },
       "links": {},
-      "address": "0x261f9ea8194473f8a4c6100c072504260d5b5b21",
-      "transactionHash": "0x989efd8258484f35ffea8b64b21216187f5e1ba2ced6027706133034122341df"
+      "address": "0x6388b4d6f5ec89ee2eb1918642e0a0bce210cc87",
+      "transactionHash": "0xc2f833d2eee58fb112802f4fa1897cc1b868847ed042065c0f56a8e20bfdc4d9"
     }
   },
   "schemaVersion": "2.0.0",
-  "updatedAt": "2021-12-31T08:40:04.663Z"
+  "updatedAt": "2022-03-15T08:13:46.341Z"
 }
