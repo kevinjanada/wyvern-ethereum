@@ -1404,6 +1404,42 @@
     "version": "0.4.23+commit.124ca40d.Emscripten.clang"
   },
   "networks": {
+    "137": {
+      "events": {
+        "0xf8df31144d9c2f0f6b59d69b8b98abd5459d07f2742c4df920b25aae33c64820": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "previousOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipRenounced",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xf29482f048eefb4f83507d5d1370c1993055592a",
+      "transactionHash": "0x88173f068d40905b4e5bda745ced6a40a8050cf62283de29f5e052cf4dd58284"
+    },
     "80001": {
       "events": {
         "0xf8df31144d9c2f0f6b59d69b8b98abd5459d07f2742c4df920b25aae33c64820": {
@@ -1442,5 +1478,5 @@
     }
   },
   "schemaVersion": "2.0.0",
-  "updatedAt": "2022-03-15T08:13:46.341Z"
+  "updatedAt": "2022-03-15T13:44:07.583Z"
 }
