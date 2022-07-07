@@ -1308,6 +1308,12 @@
     "version": "0.4.23+commit.124ca40d.Emscripten.clang"
   },
   "networks": {
+    "5": {
+      "events": {},
+      "links": {},
+      "address": "0x52fdcb6e8a73a6d7b2a33b62e5bc40d5f6690677",
+      "transactionHash": "0xca00ae230e676b61a545091f7c4b79275b38427f51fa8756ff08e9a5b0b2cee5"
+    },
     "137": {
       "events": {},
       "links": {},
@@ -1322,5 +1328,5 @@
     }
   },
   "schemaVersion": "2.0.0",
-  "updatedAt": "2022-03-15T13:44:07.574Z"
+  "updatedAt": "2022-07-07T13:21:05.078Z"
 }

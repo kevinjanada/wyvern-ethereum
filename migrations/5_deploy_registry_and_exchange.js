@@ -16,6 +16,7 @@ module.exports = (deployer, network) => {
     || network === 'telkom'
     || network === 'polygon_mumbai'
     || network === 'polygon_mainnet'
+    || network === 'goerli'
   ) {
     return deployer.deploy(WyvernProxyRegistry)
       .then(() => {
@@ -32,7 +33,8 @@ module.exports = (deployer, network) => {
                 || network === 'coverage'
                 || network === 'telkom'
                 || network === 'polygon_mumbai'
-                || network === 'polygon_mainnet')
+                || network === 'polygon_mainnet'
+                || network === 'goerli')
                 ? tokenInstance.address 
                 : '0x056017c55ae7ae32d12aef7c679df83a85ca75ff',
               '0xa839d4b5a36265795eba6894651a8af3d0ae2e68'

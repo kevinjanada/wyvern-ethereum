@@ -42,7 +42,7 @@ module.exports = {
     telkom: {
       provider: () => new HDWalletProvider({
         privateKeys: [process.env.PRIVATE_KEY],
-        providerOrUrl: 'https://rpc.telkombc.id/',
+        providerOrUrl: 'https://rpc.telkombc.id/'
       }),
       network_id: 2021,
       gas: 0,
@@ -51,7 +51,7 @@ module.exports = {
     polygon_mumbai: {
       provider: () => new HDWalletProvider({
         privateKeys: [process.env.PRIVATE_KEY],
-        providerOrUrl: 'https://speedy-nodes-nyc.moralis.io/3006aa01728823dbd0ed3134/polygon/mumbai',
+        providerOrUrl: 'https://speedy-nodes-nyc.moralis.io/3006aa01728823dbd0ed3134/polygon/mumbai'
       }),
       network_id: 80001,
       gas: 0,
@@ -60,9 +60,18 @@ module.exports = {
     polygon_mainnet: {
       provider: () => new HDWalletProvider({
         privateKeys: [process.env.PRIVATE_KEY],
-        providerOrUrl: 'https://speedy-nodes-nyc.moralis.io/3006aa01728823dbd0ed3134/polygon/mainnet',
+        providerOrUrl: 'https://speedy-nodes-nyc.moralis.io/3006aa01728823dbd0ed3134/polygon/mainnet'
       }),
       network_id: 137,
+      gas: 0,
+      gasPrice: 0x0
+    },
+    goerli: {
+      provider: () => new HDWalletProvider({
+        privateKeys: [process.env.PRIVATE_KEY],
+        providerOrUrl: 'https://speedy-nodes-nyc.moralis.io/3006aa01728823dbd0ed3134/eth/goerli'
+      }),
+      network_id: 5,
       gas: 0,
       gasPrice: 0x0
     }
