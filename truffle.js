@@ -69,7 +69,7 @@ module.exports = {
     goerli: {
       provider: () => new HDWalletProvider({
         privateKeys: [process.env.PRIVATE_KEY],
-        providerOrUrl: 'https://speedy-nodes-nyc.moralis.io/3006aa01728823dbd0ed3134/eth/goerli'
+        providerOrUrl: 'https://goerli.infura.io/v3/' + process.env.INFURA_KEY
       }),
       network_id: 5,
       gas: 0,
